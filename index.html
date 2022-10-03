@@ -152,9 +152,7 @@
                Ефективні рішення для <br />
                 вашого бізнесу
               </h1>
-        <button class="button_servise" name="кнопка">
-          Замовити послугу
-        </button>
+        <button class="button_servise" name="кнопка"data-modal-open>Замовити послугу</button>
       </div>
     </section>
 
@@ -250,7 +248,7 @@
       
         <section class="our_command">
           <div class="container">
-          <h2 class="command">Наша команда</h2>
+          <h2 class="command">Наша команда </h2>
           <ul class="command_title">
             <!-- igor -->
             <li class="command-fon">
@@ -532,5 +530,19 @@
           </div>
          
       </footer>
+
+      <!-- modal-window -->
+
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-btn" type="button"data-modal-close>&#215
+              <svg width="0" height="0">
+                <use href=""></use>
+              </svg>
+            </button>
+        </div>
+
+      </div>
+      <script src="./js/modal.js"></script>
      </body>
 </html>

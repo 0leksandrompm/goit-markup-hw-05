@@ -488,6 +488,12 @@ button:hover {
   font-weight: 500;
   }
 
+  .link2::after{
+    border-bottom: #2196f3;
+    border-radius: 2px;
+   
+  }
+
 .link3 {
   cursor: pointer;
   font-weight: 500;
@@ -721,5 +727,81 @@ address {
  
 .fon-fut{
   fill: var(--foc-col-white);
+}
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.is-hidden {
+  opacity:0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 521px;
+  background-color: rgba(255, 255, 255, 1);
+
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-btn{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.over-thumb{
+  position: relative;
+  overflow: hidden;
+}
+
+.overley{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.2);
+  width: 100%;
+  height: 100%;
+    padding: 20px;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur (4px);
+  transform: translatey(100%);
+  transition: transform();
+}
+
+
+.over-thumb:hover .overley , .over-thumb:focus .overley{
+  transform: translatey(0);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: rgb(255, 255,255);
+  transition: transform .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
