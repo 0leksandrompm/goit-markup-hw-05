@@ -486,13 +486,13 @@ button:hover {
   line-height: 1.14;
   letter-spacing: normal;
   font-weight: 500;
+    border: none;
+    border-bottom: 4px solid rgba(33, 150, 243, 1);
+    padding-bottom: 28px;
+    
   }
 
-  .link2::after{
-    border-bottom: #2196f3;
-    border-radius: 2px;
-   
-  }
+  
 
 .link3 {
   cursor: pointer;
