@@ -240,13 +240,13 @@ body {
   flex-wrap: wrap;
 }
 
-.any-items:hover, .any-items:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-}
+
 
 .any-items {
 }
+
+
+
 
 .command_title .paragraf {
   line-height: 1.2;
@@ -508,7 +508,7 @@ footer {
   display: flex;
   align-items: center;
 
-  transition-property: color,  background-color, box-shadow;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -527,6 +527,12 @@ footer {
   transition-property: color,  background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link1:hover, .link1:focus{
+ background-color: rgba(33, 150, 243, 1);
+ color:rgb(245, 244, 250);
+ box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 .link2 {
@@ -857,12 +863,13 @@ n address {
   overflow: hidden;
 
   
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overley {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -876,26 +883,22 @@ n address {
   backdrop-filter: blur (4px);
   transform: translatey(100%);
   
-  transition-property: background-color color;
+  transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.any-force{
-display: block;
+.any-reference{
+/* display: block; */
 text-decoration: none;
+
 }
 
-.any-force:hover .overley,
-.any-force:focus .overley {
+.any-reference:hover .overley,
+.any-reference:focus .overley {
   transform: translatey(0);
   background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
-}
-
-.over-thumb:hover .overley,
-.over-thumb:focus .overley {
-  transform: translatey(0);
-  background-color: rgba(33, 150, 243, 0.9);
-  color: rgb(255, 255, 255);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
