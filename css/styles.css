@@ -888,10 +888,22 @@ n address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.any-reference{
-/* display: block; */
+.any-reference:hover,
+.any-reference:focus{
+display: block;
 text-decoration: none;
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+.any-reference{
+
+box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
 }
 
 .any-reference:hover .overley,
@@ -899,6 +911,5 @@ text-decoration: none;
   transform: translatey(0);
   background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+  
 }
