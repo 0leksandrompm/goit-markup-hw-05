@@ -470,8 +470,8 @@ footer {
   display: block;
   border: 1px solid rgba(175, 177, 184, 1);
 
-    transition-property: fill;
-transition-duration: 250ms;
+  transition-property: fill, border;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -508,7 +508,7 @@ transition-duration: 250ms;
   display: flex;
   align-items: center;
 
-  transition-property: color;
+  transition-property: color,  background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -523,6 +523,10 @@ transition-duration: 250ms;
   padding: 6px 22px;
   border: 4px;
   background-color: rgb(245, 244, 250);
+
+  transition-property: color,  background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link2 {
@@ -534,7 +538,7 @@ transition-duration: 250ms;
   border: none;
   padding-bottom: 28px;
 
-  transition-property: color;
+  transition-property: color,  background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -546,7 +550,7 @@ transition-duration: 250ms;
   width: 100%;
   height: 4px;
   left: 0px;
-  top: 44px;
+  bottom: -28px;
   background: #2196f3;
   border-radius: 2px;
   z-index: 10;
@@ -708,6 +712,7 @@ n address {
   margin-bottom: 4px;
   margin-top: 0;
   padding: 0px;
+  text-decoration: none;
 }
 
 .any-paragraf {
@@ -717,6 +722,7 @@ n address {
   color: #757575;
   margin-top: 0px;
   margin-bottom: 0px;
+  text-decoration: none;
 }
 
 .border-work {
@@ -800,13 +806,14 @@ n address {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 
-  /* opacity: 0;
-  visibility: hidden; */
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
-  opacity: 0;
   pointer-events: none;
+  opacity: 0;
   visibility: hidden;
 }
 
@@ -870,11 +877,21 @@ n address {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.any-force{
+display: block;
+text-decoration: none;
+}
+
+.any-force:hover .overley,
+.any-force:focus .overley {
+  transform: translatey(0);
+  background-color: rgba(33, 150, 243, 0.9);
+  color: rgb(255, 255, 255);
+}
+
 .over-thumb:hover .overley,
 .over-thumb:focus .overley {
   transform: translatey(0);
   background-color: rgba(33, 150, 243, 0.9);
   color: rgb(255, 255, 255);
-
-
 }
